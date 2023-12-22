@@ -1,4 +1,7 @@
 .home {
-  background: tomato;
-  color: aliceblue;
+  display: flex;
+
+  .home-container {
+    flex: 6;
+  }
 }

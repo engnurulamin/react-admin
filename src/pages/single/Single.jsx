@@ -48,6 +48,7 @@ const Single = () => {
           </div>
         </div>
         <div className="bottom">
+          <div className="title">Last Transactions</div>
           <Tables />
         </div>
       </div>

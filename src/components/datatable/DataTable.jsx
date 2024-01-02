@@ -4,7 +4,7 @@ import { userColumns, userRows, actionColumn } from "../../dtsource";
 
 const DataTable = () => {
   return (
-    <div className="data-table" style={{ height: 800, width: "100%" }}>
+    <div className="data-table">
       <DataGrid
         rows={userRows}
         columns={userColumns.concat(actionColumn)}

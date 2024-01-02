@@ -1,6 +1,7 @@
 import "./single.scss";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
+import Chart from "../../components/chart/Chart";
 
 const Single = () => {
   return (
@@ -41,7 +42,9 @@ const Single = () => {
               </div>
             </div>
           </div>
-          <div className="right">Left</div>
+          <div className="right">
+            <Chart />
+          </div>
         </div>
         <div className="bottom">bottom</div>
       </div>

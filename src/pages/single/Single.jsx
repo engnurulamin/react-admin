@@ -12,7 +12,7 @@ const Single = () => {
         <div className="top">
           <div className="left">
             <div className="edit-btn">Edit</div>
-            <h1 className="title">Information</h1>
+            <div className="title">Information</div>
             <div className="item">
               <img
                 src="https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"

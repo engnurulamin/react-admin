@@ -55,8 +55,8 @@ const New = () => {
                 <label>Country</label>
                 <input type="text" placeholder="Country" />
               </div>
+              <button>Send</button>
             </form>
-            <button>Send</button>
           </div>
         </div>
       </div>

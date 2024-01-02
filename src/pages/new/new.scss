@@ -34,7 +34,7 @@
           display: flex;
           flex-wrap: wrap;
           gap: 30px;
-          justify-content: space-around;
+          // justify-content: space-around;
 
           .form-input {
             width: 40%;
@@ -55,16 +55,16 @@
               border-bottom: 1px solid gray;
             }
           }
-        }
-        button {
-          width: 150px;
-          padding: 10px;
-          border: none;
-          background-color: teal;
-          color: white;
-          font-weight: bold;
-          cursor: pointer;
-          margin-top: 10px;
+          button {
+            width: 200px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
         }
       }
     }

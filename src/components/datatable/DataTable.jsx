@@ -17,6 +17,7 @@ const DataTable = () => {
         </Link>
       </div>
       <DataGrid
+        className="data-grid"
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
         initialState={{

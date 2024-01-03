@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const userColumns = [
   { field: "id", headerName: "ID", width: 70 },
   {
@@ -37,6 +39,7 @@ export const userColumns = [
     },
   },
 ];
+
 export const actionColumn = [
   {
     field: "action",
@@ -45,7 +48,9 @@ export const actionColumn = [
     renderCell: (params) => {
       return (
         <div className="cell-action">
-          <div className="view-button">View</div>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <div className="view-button">View</div>
+          </Link>
           <div className="delete-button">Delete</div>
         </div>
       );

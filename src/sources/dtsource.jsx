@@ -48,7 +48,7 @@ export const actionColumn = [
     renderCell: (params) => {
       return (
         <div className="cell-action">
-          <Link to="/users" style={{ textDecoration: "none" }}>
+          <Link to="/users">
             <div className="view-button">View</div>
           </Link>
           <div className="delete-button">Delete</div>

@@ -3,14 +3,14 @@ import "./new.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
-const New = () => {
+const New = ({ inputs, title }) => {
   return (
     <div className="new">
       <Sidebar />
       <div className="new-conatiner">
         <Navbar />
         <div className="top">
-          <h1>Add New User</h1>
+          <h1>{title}</h1>
         </div>
         <div className="bottom">
           <div className="left">
@@ -27,34 +27,12 @@ const New = () => {
                 </label>
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
-              <div className="form-input">
-                <label>Username</label>
-                <input type="text" placeholder="nurulamin" />
-              </div>
-              <div className="form-input">
-                <label>Name and Surname</label>
-                <input type="text" placeholder="Nurul Amin" />
-              </div>
-              <div className="form-input">
-                <label>Email</label>
-                <input type="email" placeholder="amin24@gmail.com" />
-              </div>
-              <div className="form-input">
-                <label>Phone</label>
-                <input type="text" placeholder="+88 01756 683454" />
-              </div>
-              <div className="form-input">
-                <label>Passowrd</label>
-                <input type="passowrd" placeholder="Enter Password" />
-              </div>
-              <div className="form-input">
-                <label>Address</label>
-                <input type="text" placeholder="Address" />
-              </div>
-              <div className="form-input">
-                <label>Country</label>
-                <input type="text" placeholder="Country" />
-              </div>
+              {inputs.map((input) => (
+                <div className="form-input" key={input.id}>
+                  <label>{input.label}</label>
+                  <input type={input.type} placeholder={input.placeholder} />
+                </div>
+              ))}
               <button>Send</button>
             </form>
           </div>
